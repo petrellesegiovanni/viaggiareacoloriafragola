@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 Cose da Non Fare in Giappone | Guida Esclusiva</title>
-    <!-- Google Fonts: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>5 Cose da Non Fare in Giappone | Viaggiare a Colori Afragola</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
-        /* --- RESET & VARIABILI --- */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
         :root {
-            --primary-red: #FF4D4D;
-            --primary-dark: #1A1A1A;
-            --bg-light: #F9F9F9;
-            --text-gray: #555555;
+            /* Palette coordinata con il logo Viaggiare a Colori */
+            --primary-blue: #0056B3;
+            --primary-dark-blue: #002B66;
+            --cyan-accent: #00A3E0;
+            --bg-light: #F4F8FC;
+            --text-dark: #1E293B;
+            --text-gray: #64748B;
             --whatsapp-green: #25D366;
             --whatsapp-hover: #1EBE5B;
             --white: #FFFFFF;
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
         }
 
         body {
             background-color: var(--white);
-            color: var(--primary-dark);
+            color: var(--text-dark);
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         a {
@@ -37,95 +42,101 @@
             color: inherit;
         }
 
-        /* --- NAVBAR PULITA --- */
         header {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 15px 8%;
+            padding: 16px 8%;
             background: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            box-shadow: 0 2px 15px rgba(0, 43, 102, 0.06);
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
         .logo img {
-            max-height: 60px;
+            max-height: 65px;
             width: auto;
             display: block;
+            transition: transform 0.3s ease;
         }
 
-        /* --- HERO SECTION --- */
+        .logo img:hover {
+            transform: scale(1.02);
+        }
+
         .hero {
             position: relative;
-            min-height: 520px;
-            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+            min-height: 540px;
+            background: linear-gradient(135deg, rgba(0, 43, 102, 0.75) 0%, rgba(0, 86, 179, 0.6) 100%), 
                         url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 0 8%;
-            border-radius: 0 0 30px 30px;
+            padding: 40px 8% 80px 8%;
+            border-radius: 0 0 32px 32px;
         }
 
         .hero-content {
-            max-width: 650px;
+            max-width: 720px;
             color: var(--white);
         }
 
         .hero-badge {
-            background: rgba(255, 77, 77, 0.9);
+            background: linear-gradient(90deg, var(--cyan-accent), var(--primary-blue));
             color: var(--white);
-            padding: 6px 16px;
-            border-radius: 20px;
+            padding: 8px 20px;
+            border-radius: 30px;
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.2px;
             display: inline-block;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 163, 224, 0.3);
         }
 
         .hero-content h1 {
-            font-size: 42px;
-            font-weight: 700;
-            line-height: 1.25;
-            margin-bottom: 15px;
+            font-size: 44px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
         }
 
         .hero-content p {
-            font-size: 17px;
-            margin-bottom: 30px;
+            font-size: 18px;
+            margin-bottom: 35px;
             opacity: 0.95;
             font-weight: 300;
+            line-height: 1.6;
         }
 
-        .btn-red {
-            background-color: var(--primary-red);
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark-blue) 100%);
             color: var(--white);
-            padding: 14px 32px;
-            border-radius: 30px;
+            padding: 16px 36px;
+            border-radius: 50px;
             font-weight: 600;
             font-size: 16px;
             transition: all 0.3s ease;
             display: inline-block;
-            border: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
             cursor: pointer;
-            box-shadow: 0 8px 20px rgba(255, 77, 77, 0.35);
+            box-shadow: 0 8px 25px rgba(0, 86, 179, 0.4);
         }
 
-        .btn-red:hover {
-            background-color: #e03e3e;
-            transform: translateY(-2px);
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 86, 179, 0.5);
+            background: linear-gradient(135deg, var(--cyan-accent) 0%, var(--primary-blue) 100%);
         }
 
-        /* --- 5 FEATURES CARDS (GRID FLUIDA) --- */
         .features-container {
-            max-width: 1200px;
-            margin: -60px auto 70px auto;
-            padding: 0 20px;
+            max-width: 1240px;
+            margin: -60px auto 80px auto;
+            padding: 0 24px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
@@ -135,126 +146,152 @@
 
         .feature-card {
             background: var(--white);
-            padding: 30px 20px;
-            border-radius: 20px;
-            box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+            border-radius: 24px;
+            box-shadow: var(--shadow-lg);
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid #F0F0F0;
+            transition: all 0.3s ease;
+            border: 1px solid #E2E8F0;
         }
 
         .feature-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+            transform: translateY(-8px);
+            border-color: var(--cyan-accent);
+            box-shadow: 0 20px 30px -10px rgba(0, 86, 179, 0.15);
         }
 
         .icon-circle {
-            width: 55px;
-            height: 55px;
-            background-color: #FFF0F0;
-            color: var(--primary-red);
+            width: 60px;
+            height: 60px;
+            background: #EBF5FF;
+            color: var(--primary-blue);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 18px auto;
-            font-size: 24px;
+            margin: 0 auto 20px auto;
+            font-size: 26px;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
         }
 
         .feature-card h3 {
-            font-size: 17px;
-            margin-bottom: 10px;
-            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 700;
+            color: var(--primary-dark-blue);
         }
 
         .feature-card p {
-            font-size: 13px;
+            font-size: 14px;
             color: var(--text-gray);
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
-        /* --- PACKAGES SECTION --- */
         .packages-section {
-            padding: 20px 8% 60px 8%;
+            padding: 20px 8% 80px 8%;
             text-align: center;
-            background-color: var(--white);
+            background-color: var(--bg-light);
+            border-radius: 32px;
+            max-width: 1300px;
+            margin: 0 auto 80px auto;
         }
 
         .section-title {
-            font-size: 34px;
-            font-weight: 700;
-            margin-bottom: 10px;
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--primary-dark-blue);
+            letter-spacing: -0.5px;
         }
 
         .section-title span {
-            color: var(--primary-red);
+            color: var(--cyan-accent);
         }
 
         .section-subtitle {
-            font-size: 15px;
+            font-size: 16px;
             color: var(--text-gray);
-            max-width: 580px;
-            margin: 0 auto 45px auto;
+            max-width: 620px;
+            margin: 0 auto 50px auto;
         }
 
         .packages-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin-bottom: 50px;
         }
 
         .package-card {
             background: var(--white);
-            border-radius: 20px;
+            border-radius: 24px;
             overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            box-shadow: var(--shadow-sm);
             text-align: left;
-            border: 1px solid #EFEFEF;
-            transition: transform 0.3s ease;
+            border: 1px solid #E2E8F0;
+            transition: all 0.3s ease;
         }
 
         .package-card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .package-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 220px;
         }
 
         .package-card img {
             width: 100%;
-            height: 220px;
+            height: 100%;
             object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .package-card:hover img {
+            transform: scale(1.08);
         }
 
         .package-info {
-            padding: 25px;
+            padding: 28px 24px;
         }
 
         .package-tag {
             font-size: 12px;
-            color: var(--primary-red);
+            color: var(--primary-blue);
+            background: #EBF5FF;
+            padding: 4px 12px;
+            border-radius: 20px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.8px;
+            display: inline-block;
+            margin-bottom: 12px;
         }
 
         .package-info h4 {
             font-size: 20px;
-            margin: 8px 0 12px 0;
-            font-weight: 600;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: var(--primary-dark-blue);
         }
 
         .package-info p {
             font-size: 14px;
             color: var(--text-gray);
+            line-height: 1.6;
         }
 
-        /* --- WHATSAPP CONVERSION CTA --- */
         .cta-whatsapp-section {
-            background: linear-gradient(135deg, #F9FBF9 0%, #E8F8EE 100%);
-            padding: 70px 8%;
-            border-top: 1px solid #E0F2E5;
+            background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
+            padding: 80px 8%;
+            border: 1px solid #BBF7D0;
             text-align: center;
-            border-radius: 30px 30px 0 0;
-            margin-top: 20px;
+            border-radius: 32px;
+            max-width: 1200px;
+            margin: 0 auto 80px auto;
+            box-shadow: var(--shadow-sm);
         }
 
         .cta-whatsapp-container {
@@ -263,23 +300,24 @@
         }
 
         .cta-whatsapp-container h2 {
-            font-size: 32px;
-            font-weight: 700;
-            color: var(--primary-dark);
-            margin-bottom: 15px;
+            font-size: 34px;
+            font-weight: 800;
+            color: #065F46;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
         }
 
         .cta-whatsapp-container p {
-            font-size: 16px;
-            color: var(--text-gray);
-            margin-bottom: 35px;
+            font-size: 17px;
+            color: #166534;
+            margin-bottom: 36px;
             line-height: 1.6;
         }
 
         .btn-whatsapp {
             background-color: var(--whatsapp-green);
             color: var(--white);
-            padding: 16px 36px;
+            padding: 18px 40px;
             border-radius: 50px;
             font-weight: 700;
             font-size: 18px;
@@ -298,28 +336,32 @@
         }
 
         .btn-whatsapp svg {
-            width: 26px;
-            height: 26px;
+            width: 28px;
+            height: 28px;
             fill: currentColor;
         }
 
         .cta-subtext {
-            font-size: 13px;
-            color: #888888;
-            margin-top: 15px;
+            font-size: 14px;
+            color: #15803D;
+            margin-top: 18px;
             display: block;
+            font-weight: 500;
         }
 
-        /* --- FOOTER --- */
         footer {
-            background-color: var(--primary-dark);
-            color: #888888;
+            background-color: var(--primary-dark-blue);
+            color: #94A3B8;
             text-align: center;
-            padding: 25px 8%;
-            font-size: 13px;
+            padding: 32px 8%;
+            font-size: 14px;
         }
 
-        /* --- RESPONSIVE MOBILE --- */
+        footer p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
         @media (max-width: 900px) {
             .features-container {
                 grid-template-columns: repeat(2, 1fr);
@@ -328,129 +370,139 @@
 
             .hero {
                 min-height: 480px;
-                padding: 0 5%;
+                padding: 40px 5% 60px 5%;
             }
 
             .hero-content h1 {
-                font-size: 30px;
+                font-size: 32px;
             }
 
             .hero-content p {
-                font-size: 15px;
+                font-size: 16px;
             }
 
             .section-title {
-                font-size: 26px;
+                font-size: 28px;
             }
 
             .cta-whatsapp-container h2 {
-                font-size: 26px;
+                font-size: 28px;
             }
 
             .btn-whatsapp {
                 width: 100%;
                 justify-content: center;
-                padding: 16px 20px;
-                font-size: 16px;
+                padding: 16px 24px;
+                font-size: 17px;
             }
         }
 
-        @media (max-width: 550px) {
+        @media (max-width: 580px) {
             .features-container {
                 grid-template-columns: 1fr;
+            }
+
+            .packages-section {
+                padding: 30px 5% 50px 5%;
+                border-radius: 20px;
+            }
+
+            .cta-whatsapp-section {
+                padding: 50px 6%;
+                border-radius: 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- NAVBAR PULITA -->
     <header>
         <div class="logo">
-            <!-- Sostituisci "logo.png" con il percorso reale del tuo file logo -->
-            <img src="viaggiareacoloriafragola/logo.png" alt="Viaggiare a Colori Afragola">
+            <img src="logo.png" alt="Viaggiare a Colori Afragola" onerror="this.onerror=null; this.src='https://placehold.co/240x80/002B66/FFFFFF?text=Viaggiare+a+Colori';">
         </div>
     </header>
 
-    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
             <span class="hero-badge">Guida Esclusiva Giappone</span>
             <h1>5 Cose da Non Fare Assolutamente in Giappone</h1>
-            <p>Hai richiesto la nostra guida rapida per evitare brutte figure, rispettare il galateo locale e vivere un viaggio senza imprevisti!</p>
-            <a href="#regole" class="btn-red">Scopri le 5 Regole</a>
+            <p>La nostra guida rapida ed essenziale per evitare errori di etichetta, rispettare le usanze locali e vivere un viaggio straordinario e senza imprevisti!</p>
+            <a href="#regole" class="btn-primary">Scopri le 5 Regole</a>
         </div>
     </section>
 
-    <!-- 5 REGOLE CARD -->
     <section class="features-container" id="regole">
         <div class="feature-card">
             <div class="icon-circle">🥢</div>
             <h3>1. Bacchette nel Riso</h3>
-            <p>Non piantarle mai in verticale ed evita di passarti il cibo: sono gesti legati ai riti funerari.</p>
+            <p>Non piantarle mai in verticale ed evita di passarti il cibo tra bacchette: sono gesti strettamente legati ai riti funerari.</p>
         </div>
         <div class="feature-card">
             <div class="icon-circle">🤫</div>
             <h3>2. Silenzio sui Mezzi</h3>
-            <p>Non si parla al telefono su treni e metropolitane. Mantieni sempre la modalità silenziosa.</p>
+            <p>Evita di parlare al telefono su treni e metropolitane. Mantieni sempre il telefono in modalità silenziosa per rispetto.</p>
         </div>
         <div class="feature-card">
             <div class="icon-circle">👟</div>
             <h3>3. Togliere le Scarpe</h3>
-            <p>Toglile sempre all'ingresso di case, templi, ryokan e ristoranti prima di salire sul tatami.</p>
+            <p>Toglile sempre all'ingresso di abitazioni, templi, ryokan e alcuni ristoranti prima di salire sul tatami.</p>
         </div>
         <div class="feature-card">
             <div class="icon-circle">🚶‍♂️</div>
-            <h3>4. Mangiare In Giro</h3>
-            <p>Non consumare cibo o bevande camminando per strada. Fermati vicino ai locali o ai distributori.</p>
+            <h3>4. Mangiare Camminando</h3>
+            <p>Non consumare cibo o bevande mentre cammini per strada. Fermati vicino ai distributori automatici o al locale.</p>
         </div>
         <div class="feature-card">
             <div class="icon-circle">💴</div>
             <h3>5. Zero Mance</h3>
-            <p>Non lasciare la mancia: è considerata un gesto inopportuno. Il servizio eccellente è sempre incluso.</p>
+            <p>Non lasciare la mancia: è considerata un gesto ambiguo o inopportuno. Il servizio eccellente è sempre incluso.</p>
         </div>
     </section>
 
-    <!-- PACCHETTI / ITINERARI GIAPPONE -->
     <section class="packages-section">
         <h2 class="section-title">I Migliori <span>Itinerari</span> in Giappone</h2>
-        <p class="section-subtitle">Scegli tra i nostri tour organizzati e preparati a vivere un'esperienza autentica, curata nei minimi dettagli.</p>
+        <p class="section-subtitle">Scegli tra i nostri tour organizzati e preparati a vivere un'esperienza autentica, curata nei minimi dettagli da Viaggiare a Colori.</p>
 
         <div class="packages-grid">
             <div class="package-card">
-                <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600&auto=format&fit=crop" alt="Tokyo Esplorazione">
+                <div class="package-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600&auto=format&fit=crop" alt="Tokyo Esplorazione">
+                </div>
                 <div class="package-info">
                     <span class="package-tag">7 Giorni</span>
                     <h4>Tokyo & Tradizione</h4>
-                    <p>Dalla modernità di Shibuya al fascino storico dei vicoli di Asakusa e la natura di Hakone.</p>
+                    <p>Dalla vivace modernità di Shibuya e Shinjuku al fascino storico dei vicoli di Asakusa e la natura di Hakone.</p>
                 </div>
             </div>
 
             <div class="package-card">
-                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600&auto=format&fit=crop" alt="Kyoto Templi">
+                <div class="package-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600&auto=format&fit=crop" alt="Kyoto Templi">
+                </div>
                 <div class="package-info">
                     <span class="package-tag">10 Giorni</span>
                     <h4>Kyoto & I Templi Antichi</h4>
-                    <p>Immergiti nella cultura tradizionale giapponese tra santuari, bambuseti e geishe a Gion.</p>
+                    <p>Immergiti nella cultura tradizionale giapponese tra santuari storici, la foresta di bambù e il quartiere delle Geishe a Gion.</p>
                 </div>
             </div>
 
             <div class="package-card">
-                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600&auto=format&fit=crop" alt="Osaka Street Food">
+                <div class="package-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=600&auto=format&fit=crop" alt="Osaka Street Food">
+                </div>
                 <div class="package-info">
                     <span class="package-tag">5 Giorni</span>
                     <h4>Osaka & Street Food Tour</h4>
-                    <p>Un viaggio alla scoperta della vera cucina giapponese nella capitale del cibo da strada.</p>
+                    <p>Un viaggio gastronomico e sensoriale alla scoperta della vera cucina giapponese nella capitale dello street food.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONVERSIONE WHATSAPP -->
     <section class="cta-whatsapp-section">
         <div class="cta-whatsapp-container">
             <h2>Vuoi organizzare il tuo viaggio in Giappone?</h2>
-            <p>Hai domande su itinerari, voli o sulle usanze locali? Parla direttamente con un nostro esperto del Giappone su WhatsApp per costruire il tuo viaggio su misura!</p>
+            <p>Hai domande su itinerari, periodi migliori, voli o usanze locali? Parla direttamente con un nostro esperto di Viaggiare a Colori Afragola su WhatsApp!</p>
             
             <a href="https://wa.me/393294585290?text=Ciao!%20Ho%20visto%20la%20guida%20sulle%205%20cose%20da%20non%20fare%20in%20Giappone%20e%20vorrei%20informazioni%20per%20un%20viaggio." target="_blank" class="btn-whatsapp">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -462,7 +514,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; Viaggiare a Colori Afragola. Tutti i diritti riservati.</p>
     </footer>
